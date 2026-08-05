@@ -19,3 +19,5 @@ Imports:
     UWLdbr (>= 0.1.4)
 Remotes: 
     github::rallen-uwl/UWLdbr
+URL: https://github.com/rallen-uwl/UWLcshr
+BugReports: https://github.com/rallen-uwl/UWLcshr/issues
