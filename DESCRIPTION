@@ -1,0 +1,21 @@
+Package: UWLcshr
+Title: UWL College of Science & Health Utilitites
+Version: 0.0.0.9000
+Authors@R: 
+    person("Robert", "Allen", , "rallen@uwlax.edu", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Imports: 
+    dplyr,
+    lubridate,
+    readr,
+    readxl,
+    stringr,
+    tibble,
+    tidyr,
+    UWLdbr (>= 0.1.4)
+Remotes: 
+    github::rallen-uwl/UWLdbr
