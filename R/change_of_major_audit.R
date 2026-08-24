@@ -504,7 +504,8 @@ audit_change_of_major <- function(
   )
 
   required_change <- c(
-    "Reference Number", "Date Submitted", "Student ID", "First Name", "Last Name", "Comments",
+#    "Reference Number", "Date Submitted", "Student ID", "First Name", "Last Name", "Comments",
+    "Reference Number", "Date Submitted", "Student ID", "First Name", "Last Name", "Description of Changes",
     "Desired Major", "Desired Track/Emphasis/Concentration",
     "Desired 2nd Major", "Desired 2nd Track/Emphasis/Concentration",
     "Desired Minor", "Desired 2nd Minor",
@@ -602,7 +603,7 @@ audit_change_of_major <- function(
         `Disposition` = "Action required",
         `Desired Programs` = desired_programs,
         `Recorded Programs` = recorded_programs,
-        `Comments` = submission$Comments
+        `Comments` = submission$`Description of Changes`
       )
       next
     }
@@ -716,7 +717,7 @@ audit_change_of_major <- function(
         `Disposition` = disposition,
         `Desired Programs` = desired_programs,
         `Recorded Programs` = recorded_programs,
-        `Comments` = submission$Comments,
+        `Comments` = submission$`Description of Changes`,
         `Resolution Note` = resolution_note
       )
     }
