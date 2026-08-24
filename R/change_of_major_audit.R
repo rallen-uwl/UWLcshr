@@ -690,7 +690,7 @@ audit_change_of_major <- function(
       false_positive <- result == "Program mismatch" &&
         comment_false_positive(
           field,
-          submission$Comments[[1]],
+          submission$`Description of Changes`[[1]],
           submission[["None of the above. I'm changing/adding a minor or other program"]][[1]]
         )
 
@@ -698,7 +698,7 @@ audit_change_of_major <- function(
         result == "Match" ~ "No action",
         false_positive ~ "False positive - comments indicate different scope",
         result == "Mapping not found" ~ "Mapping review required",
-        submission$Comments[[1]] != "" ~ "Review comments",
+        submission$`Description of Changes`[[1]] != "" ~ "Review comments",
         TRUE ~ "Action required"
       )
 
